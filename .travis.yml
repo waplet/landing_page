@@ -6,4 +6,14 @@ before_script:
   - npm install -g react-scripts
 
 script:
-  - build
+  - npm run build
+
+deploy:
+    provider: pages
+    skip_cleanup: true
+    github_token: $GITHUB_TOKEN
+    on:
+        branch: master
+    repo: waplet/waplet.github.io
+    target_branch: master
+    local_dir: build
