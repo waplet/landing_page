@@ -17,3 +17,4 @@ deploy:
     repo: waplet/waplet.github.io
     target_branch: master
     local_dir: build
+    fqdn: waplet.id.lv
