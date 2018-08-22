@@ -30,7 +30,7 @@ class ContactPage extends Component {
             <div className="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3">
                 {this.state.rows.map(function (row, i) {
                     return <Row key={i} content={row} />
-                })};
+                })}
             </div>
         )
     }
